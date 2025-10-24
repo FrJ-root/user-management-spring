@@ -63,7 +63,6 @@ public class UserServiceImpl implements UserService {
         return UserMapper.toDTO(userRepository.save(user));
     }
 
-
     @Override
     public void deleteUser(Long id) {
         User user = userRepository.findById(id)
